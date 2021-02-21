@@ -1,4 +1,8 @@
 
+def print_calculation(compute):
+    print("The result of your computation is", str(compute))
+
+
 print('What is your name')
 
 name = input()
@@ -33,30 +37,26 @@ num2 = int(input())
 
 print('Performing magic with the numbers you inputed.')
 print()
-print('Still performing magic')
-print()
 print('Any moment from now...')
-
-print('Voila')
 print()
 if(selectedOperand == 0):
     print('You selected an addition operation')
-    print("The result of your computation is", str(num1 + num2))
+    print_calculation(num1 + num2)
 elif selectedOperand == 1:
     print("You selected a subtraction operation")
-    print("The result of your computation is", str(num1 - num2))
+    print_calculation(num1 - num2)
 elif selectedOperand == 2:
     print("You selected a multiplication operation")
-    print("The result of your computation is", str(num1 * num2))
+    print_calculation(num1 * num2)
 elif selectedOperand == 3:
     print("You selected a division operation")
-    print("The result of your computation is", str(int(num1 / num2)))
+    print_calculation(num1 // num2)
 elif selectedOperand == 4:
     print("You selected a power operation")
-    print("The result of your computation is", str(num1 ** num2))
+    print_calculation(num1 ** num2)
 elif selectedOperand == 5:
     print("You selected a reminder/modulo operation")
-    print("The result of your computation is", str(num1 % num2))
+    print_calculation(num1 % num2)
 
 print()
 print("All done")
